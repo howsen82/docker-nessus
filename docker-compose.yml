@@ -1,0 +1,13 @@
+version: '3.9'
+
+services:
+  nessus:
+    image: tenable/nessus:latest
+    container_name: nessus
+    environment:
+      - USERNAME=value
+      - PASSWORD=value
+      - ACTIVATION_CODE=value
+    ports:
+      - 8834:8834
+    restart: always
